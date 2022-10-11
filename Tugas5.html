@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="KNN" href="UTS.html" />
     <link rel="prev" title="Tugas 4 | Theory Bayesian" href="Tugas4.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -136,6 +137,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Tugas 5 | K - Means
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UTS.html">
+   KNN
   </a>
  </li>
 </ul>
@@ -395,7 +401,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8f673b53-f8aa-4fc2-a45a-1cb24d420ddd">
+  <div id="df-7cfa7d19-7230-4b20-920e-2a258d7f32c2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -466,7 +472,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8f673b53-f8aa-4fc2-a45a-1cb24d420ddd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7cfa7d19-7230-4b20-920e-2a258d7f32c2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -517,12 +523,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8f673b53-f8aa-4fc2-a45a-1cb24d420ddd button.colab-df-convert');
+          document.querySelector('#df-7cfa7d19-7230-4b20-920e-2a258d7f32c2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8f673b53-f8aa-4fc2-a45a-1cb24d420ddd');
+          const element = document.querySelector('#df-7cfa7d19-7230-4b20-920e-2a258d7f32c2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -560,7 +566,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c6959887-c92c-4d15-a039-82febe61cd60">
+  <div id="df-9c8e20fa-cede-417e-9192-8410b96a705e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -680,7 +686,7 @@ dtype: int64
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c6959887-c92c-4d15-a039-82febe61cd60')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9c8e20fa-cede-417e-9192-8410b96a705e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -731,12 +737,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c6959887-c92c-4d15-a039-82febe61cd60 button.colab-df-convert');
+          document.querySelector('#df-9c8e20fa-cede-417e-9192-8410b96a705e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c6959887-c92c-4d15-a039-82febe61cd60');
+          const element = document.querySelector('#df-9c8e20fa-cede-417e-9192-8410b96a705e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -822,7 +828,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.821428571428571
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>99.10714285714286
 94.73684210526315
 </pre></div>
 </div>
@@ -838,13 +844,13 @@ dtype: int64
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-         0.0       0.00      0.00      0.00        50
-         1.0       0.00      0.00      0.00        50
+         0.0       1.00      1.00      1.00        50
+         1.0       0.98      1.00      0.99        50
          2.0       1.00      0.92      0.96        12
 
-    accuracy                           0.10       112
-   macro avg       0.33      0.31      0.32       112
-weighted avg       0.11      0.10      0.10       112
+    accuracy                           0.99       112
+   macro avg       0.99      0.97      0.98       112
+weighted avg       0.99      0.99      0.99       112
 </pre></div>
 </div>
 </div>
@@ -884,6 +890,13 @@ weighted avg       0.11      0.10      0.10       112
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Tugas 4 | Theory Bayesian</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="UTS.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">KNN</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
