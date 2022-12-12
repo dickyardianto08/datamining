@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Dicky Ardianto</title>
+    <title>Tugas 9 | Studi Kasus Kredit Score meggunakan Ensemble Stacking &#8212; Dicky Ardianto</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Tugas8.html" />
+    <link rel="prev" title="Tugas 8 | Akurasi terbaik antara data Normalisasi dan UnNormalisasi" href="Tugas8.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -112,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    Tugas 1
@@ -144,8 +144,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="Tugas6.html">
+   Tugas 6 | Iris Data Prediction using Decision Tree Algorithm
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Tugas7.html">
    Tugas 7 | Credit Score
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas8.html">
+   Tugas 8 | Akurasi terbaik antara data Normalisasi dan UnNormalisasi
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tugas 9 | Studi Kasus Kredit Score meggunakan Ensemble Stacking
   </a>
  </li>
 </ul>
@@ -332,50 +347,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Tugas 9 | Studi Kasus Kredit Score meggunakan Ensemble Stacking</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -383,7 +371,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <p>#Tugas 9 | Studi Kasus Kredit Score meggunakan Ensemble Stacking</p>
+  <section id="tugas-9-studi-kasus-kredit-score-meggunakan-ensemble-stacking">
+<h1>Tugas 9 | Studi Kasus Kredit Score meggunakan Ensemble Stacking<a class="headerlink" href="#tugas-9-studi-kasus-kredit-score-meggunakan-ensemble-stacking" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -394,7 +383,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-65d89849-d781-4f57-b8ff-b8a6d5cb9516">
+  <div id="df-445df4ac-9a1c-4524-9dfd-849dde11247b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -574,7 +563,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-65d89849-d781-4f57-b8ff-b8a6d5cb9516')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-445df4ac-9a1c-4524-9dfd-849dde11247b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -625,12 +614,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-65d89849-d781-4f57-b8ff-b8a6d5cb9516 button.colab-df-convert');
+          document.querySelector('#df-445df4ac-9a1c-4524-9dfd-849dde11247b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-65d89849-d781-4f57-b8ff-b8a6d5cb9516');
+          const element = document.querySelector('#df-445df4ac-9a1c-4524-9dfd-849dde11247b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -651,6 +640,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -683,7 +673,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">&lt;no title&gt;</p>
+            <p class="prev-next-title">Tugas 8 | Akurasi terbaik antara data Normalisasi dan UnNormalisasi</p>
         </div>
     </a>
 </div>
