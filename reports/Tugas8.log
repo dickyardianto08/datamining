@@ -17,14 +17,18 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-data.head()
+le = preprocessing.LabelEnconder()
+le.fit(y)
+le.transform(y)
 ------------------
 
 [0;31m[0m
-[0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-5-304fa4ce4ebd>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mdata[0m[0;34m.[0m[0mhead[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;31mNameError[0m: name 'data' is not defined
-NameError: name 'data' is not defined
+[0;31mAttributeError[0mTraceback (most recent call last)
+[0;32m<ipython-input-7-a4d75727bdf9>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mle[0m [0;34m=[0m [0mpreprocessing[0m[0;34m.[0m[0mLabelEnconder[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mle[0m[0;34m.[0m[0mfit[0m[0;34m([0m[0my[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0mle[0m[0;34m.[0m[0mtransform[0m[0;34m([0m[0my[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mAttributeError[0m: module 'sklearn.preprocessing' has no attribute 'LabelEnconder'
+AttributeError: module 'sklearn.preprocessing' has no attribute 'LabelEnconder'
 

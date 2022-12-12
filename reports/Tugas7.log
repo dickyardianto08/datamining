@@ -17,14 +17,28 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-data.head()
+# data latih (nilai data)
+X_train 
+
+# data tes (nilai data)
+X_test 
+
+# data latih (kelas data)
+y_train
+
+# data tes (kelas data)
+y_test
 ------------------
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-5-304fa4ce4ebd>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mdata[0m[0;34m.[0m[0mhead[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;31mNameError[0m: name 'data' is not defined
-NameError: name 'data' is not defined
+[0;32m<ipython-input-30-cc0273241bba>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# data latih (nilai data)[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mX_train[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0;34m[0m[0m
+[1;32m      4[0m [0;31m# data tes (nilai data)[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mX_test[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mNameError[0m: name 'X_train' is not defined
+NameError: name 'X_train' is not defined
 

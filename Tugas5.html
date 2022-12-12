@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="KNN" href="UTS.html" />
+    <link rel="next" title="Tugas 7 | Credit Score" href="Tugas7.html" />
     <link rel="prev" title="Tugas 4 | Theory Bayesian" href="Tugas4.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -115,18 +115,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    Tugas 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
   </a>
  </li>
  <li class="toctree-l1">
@@ -150,8 +140,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="UTS.html">
-   KNN
+  <a class="reference internal" href="Tugas7.html">
+   Tugas 7 | Credit Score
   </a>
  </li>
 </ul>
@@ -411,7 +401,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9d633220-c68c-4110-b424-df047a27370a">
+  <div id="df-bf50aa1c-a5f3-4a2c-812a-e9ce4fe9293c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -482,7 +472,7 @@ dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9d633220-c68c-4110-b424-df047a27370a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bf50aa1c-a5f3-4a2c-812a-e9ce4fe9293c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -533,12 +523,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9d633220-c68c-4110-b424-df047a27370a button.colab-df-convert');
+          document.querySelector('#df-bf50aa1c-a5f3-4a2c-812a-e9ce4fe9293c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9d633220-c68c-4110-b424-df047a27370a');
+          const element = document.querySelector('#df-bf50aa1c-a5f3-4a2c-812a-e9ce4fe9293c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -576,7 +566,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-040aac56-6cd8-467b-addf-af955dc52a98">
+  <div id="df-48c38611-b34b-44bc-b846-a7a71c467738">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -696,7 +686,7 @@ dtype: int64
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-040aac56-6cd8-467b-addf-af955dc52a98')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-48c38611-b34b-44bc-b846-a7a71c467738')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -747,12 +737,12 @@ dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-040aac56-6cd8-467b-addf-af955dc52a98 button.colab-df-convert');
+          document.querySelector('#df-48c38611-b34b-44bc-b846-a7a71c467738 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-040aac56-6cd8-467b-addf-af955dc52a98');
+          const element = document.querySelector('#df-48c38611-b34b-44bc-b846-a7a71c467738');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -838,8 +828,8 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.821428571428571
-94.73684210526315
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8928571428571428
+5.263157894736842
 </pre></div>
 </div>
 </div>
@@ -856,11 +846,11 @@ dtype: int64
 
          0.0       0.00      0.00      0.00        50
          1.0       0.00      0.00      0.00        50
-         2.0       1.00      0.92      0.96        12
+         2.0       0.02      0.08      0.03        12
 
-    accuracy                           0.10       112
-   macro avg       0.33      0.31      0.32       112
-weighted avg       0.11      0.10      0.10       112
+    accuracy                           0.01       112
+   macro avg       0.01      0.03      0.01       112
+weighted avg       0.00      0.01      0.00       112
 </pre></div>
 </div>
 </div>
@@ -901,10 +891,10 @@ weighted avg       0.11      0.10      0.10       112
             <p class="prev-next-title">Tugas 4 | Theory Bayesian</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="UTS.html" title="next page">
+    <a class='right-next' id="next-link" href="Tugas7.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">KNN</p>
+        <p class="prev-next-title">Tugas 7 | Credit Score</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
